@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+plotly
+requests
+sqlalchemy
+psycopg2-binary
+joblib
+scikit-learn
+xgboost
+lightgbm
+mlflow
+kafka-python
+tensorflow
