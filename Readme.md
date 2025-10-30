@@ -61,6 +61,7 @@ credit-card-fraud-detection/
 │   ├── db.py
 │   └── register_models.py
 └── README.md
+
 🎒 Requirements
 Tool	Version
 Docker Desktop	✅ recommended
@@ -79,21 +80,25 @@ scaler.pkl	Colab
 (These are generated after training)
 
 ⚡ Run With Docker (Recommended)
+
 🔥 1. Start services
 bash
 Copy code
 docker-compose up -d zookeeper kafka postgres mlflow
+
 🐳 2. Build & start apps
 bash
 Copy code
 docker-compose build fastapi consumer streamlit
 docker-compose up -d fastapi consumer streamlit
+
 📊 3. Produce live transaction stream
 bash
 Copy code
 python src/kafka_producer.py --topic transactions --rate 5 --bootstrap localhost:9092
+
 🌐 URLs
-Service	URL
+Service	URL:
 🧠 MLflow	http://localhost:5000
 ⚙️ FastAPI Docs	http://localhost:8000/docs
 📈 Streamlit Dashboard	http://localhost:8501
@@ -145,20 +150,16 @@ Keras load error	compile=False while loading
 
 🚀 Future Enhancements
 ✅ Multi-model A/B testing
-
 ✅ Prometheus + Grafana load metrics
-
 🔄 Online learning mode
-
 🔐 RBAC and JWT auth
-
 🌐 Deploy to Kubernetes (GCP/EKS)
 
 🤝 Contributing
 PRs are welcome! Submit enhancements or issues.
 
 👨‍💻 Author
-Your Name
+Ayush Gangwar
 📍 India
 🔗 LinkedIn: https://www.linkedin.com/in/ayush-gangwar-8a856b272/
 
@@ -166,4 +167,5 @@ Your Name
 If you like this project, please ⭐ star the repo.
 
 This MLOps build shows your production-thinking, real-world ML deployment skills, and modern data engineering stack knowledge.
+
 
